@@ -1,0 +1,41 @@
+
+body{
+	background-image:url("https://images6.alphacoders.com/410/410435.jpg");
+	background-repeat: no-repeat;
+	
+
+}
+h2,h1{
+	
+	color:white;
+	font-style:oblique;
+}
+p{
+color:white;
+font-size:19px;
+font-style:oblique;
+
+}
+ p.Q1 {
+ 	color:maroon;
+	font-weight: bold;
+	font-size: 18px
+	color:lightblue;
+
+}
+ div{
+	 bottom:20px;
+ 	font-size:25px;
+ 	font-style:oblique;
+ 	font-weight:bolder;
+ 	color: maroon;
+ 	position: relative;
+    left: 100px;
+    top: -20px;
+}
+#btn1,#btn2{
+	margin-left:200px
+}
+
+
+

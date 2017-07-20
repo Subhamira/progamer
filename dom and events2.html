@@ -1,0 +1,36 @@
+<!--Please create a HTML file with 2 buttons and an unordered list (<ul>)
+a. On click of first button, it should add an list item to the list
+b. On click of the second button, it should find the last item in the list and delete it-->
+<!DOCTYPE>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Dom and events 2</title>
+	</head>
+	<body>
+	<button type="button"  onClick="myfunc()">1</button>
+	<button type="button" onClick="myfunc2()">2</button>
+	<ul id="a">
+	
+	<li>apple</li>
+	<li>pear</li>
+	</ul>
+	<script> 
+	function myfunc(){
+	var element=document.createElement('li');
+	element.innerHTML="banana";
+	var ulist=document.getElementById('a');
+	ulist.appendChild(element)
+	};
+
+	</script>
+	<script>
+	function myfunc2(){
+    var remove=document.getElementById('a');
+    remove.removeChild(remove.lastChild)}
+    </script>
+
+
+	
+	</body>
+	</html>

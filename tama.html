@@ -1,0 +1,111 @@
+<!DOCTYPE>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>My Project</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			alert("Welcome to my Pet Project!");
+		</script>
+		<h2>My First Project!!!</h2>
+		<h3>Introduction</h3>
+		<p>This is a brief intro about my Pet.My Pet loves to eat and sleep a lot.so before you start the game please note my pet is full.When he plays and wins all the game he would never get hungry or sleep deprived because he gets superpowers as he wins!!!!Incase if he loses he becomes hungry and becomes sleepless.you will get to know about this when you explore this game!!!Make sure that if he keeps losing the game he may even die.Looks like my pet is awaiting for us .Lets Rock!!!</p>
+
+		<p>Would you like to play with my Pet and unlock his Super Powers?</p>
+		<button type="button"  onclick="myFunc1">Play</button>
+		<button type="button" onclick="document.write()">NO</button>
+		<div id="play"></div>
+		<p>Would you like to see how hungry my Pet is?</p>
+		<button type="button" onclick="document.write()">YES</button>
+		<button type="button" onclick="document.write()">NO</button>
+
+		<p>Would you like to see whether my Pet is sleep deprived or not?</p>
+		<button type="button" onclick="document.write()">YES</button>
+		<button type="button" onclick="document.write()">NO</button>
+
+
+
+		
+		<script type="text/javascript">
+			Pet=function (){
+ 				this.name ="Halucha"
+ 				this.mood=["Happy","Relaxed","Sad"]
+ 				this.hungry_level=["Satisfied","Neutral","Hungry"]
+ 				this.energy=["energized","tired"]
+ 				this.super_power=["evaporate people","lightning","steal tail","hatches"]
+ 				this.size=["baby","medium","large","gigantic"]
+ 				this.fcount=100;this.scount=100;
+ 				this.size_count=0
+ 
+
+ 			this.getpower=function(){
+        		var result=require("./dice.js")
+       			 var r = result.myFunc1()
+        			//console.log(r)
+        		if (r==false){
+                this.scount=this.scount-5;this.fcount=this.fcount-5;
+                console.log("energy ="+this.scount,"feed ="+this.fcount)}
+        		else {
+                this.size_count=this.size_count+5;
+                console.log("size ="+this.size_count)}
+
+                if(this.size_count<25){
+                  console.log(this.name +" is "+this.mood[2]+" "+this.hungry_level[0]+" "+this.energy[0]+" "+this.name+" "+" can "+" "+this.super_power[0]+" "+"now")}
+        		else if(26<this.size_count && this.size_count<50){
+                  console.log(this.name +" is "+this.mood[1]+" "+this.hungry_level[0]+" "+this.energy[0]+" "+this.name+" got "+this.super_power[1]+" power now .")}
+         		else if(51<this.size_count && this.size_count<75){
+                  console.log(this.name +" is "+this.mood[0]+" "+this.hungry_level[1]+" "+this.energy[1]+" "+this.name+" got "+this.super_power[2]+" power now.")}
+         		 if(76<this.size_count &&this.size_count <100){
+                  console.log(this.name +" is "+this.mood[0]+" "+this.hungry_level[2]+" "+this.energy[1]+" "+this.name+" "+this.super_power[3])}
+
+                                    } 
+
+                                    
+			this.feed=function(){
+
+                console.log("feed status = "+this.fcount)
+                if(25<=this.fcount && this.fcount<=100){
+                    console.log(this.mood[1]+" "+this.hungry_level[0]+" "+this.energy[0])}
+                else if (5<=this.fcount && this.fcount<=25){
+                    console.log("warning :"+this.name+" is dying")}
+//                   console.log(this.fcount);
+                                        }
+        	this.sleep=function(){
+                console.log("sleep status="+this.scount)
+                if(25<=this.scount && this.scount<=100){
+                    console.log(this.mood[1]+" "+this.hungry_level[0]+" "+this.energy[0])}
+                 else if (5<=this.scount &&this.scoun<=25){
+                     console.log("warning : "+this.name+" is dying")}
+//                    console.log(this.scount)
+                                        }
+
+        	this.dead=function(){
+                if (this.fcount < 5 && this.scount < 5){
+                        console.log(this.name+" is Dead")}
+                                }
+			this.play=function(p){
+                 for (var i=1;i<=p;i++){
+                        this.getpower()}
+
+                                }
+
+                    };
+
+
+myPET=new Pet()
+//myPET.play(5);
+
+//myPET.feed();
+//myPET.sleep();
+myPET.dead();
+              </script>
+              <script>
+              function myfunc1(){
+
+                
+              }
+
+			</script>
+		</body>
+	</html>

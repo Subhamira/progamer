@@ -1,0 +1,26 @@
+
+.container #top-post{
+    background-color: red;
+    font-style: italic;
+    font-weight:bold;
+    font-size: large;
+    padding:10px;
+    border-width: 1px;
+    border-style: solid
+}
+.container .post.featured{
+    background-color:cyan;
+    font-weight: bold;
+    font-size: medium;
+    padding:10px;
+    border-width: 1px;
+    border-style: solid
+}
+
+.container .post{
+    background-color:green;
+    font-weight:medium;
+    padding:10px;
+    border-width: 1px;
+    border-style: solid
+}

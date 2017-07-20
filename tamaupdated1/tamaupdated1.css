@@ -1,0 +1,59 @@
+
+body{
+	background-color:cyan;
+	background-repeat: no-repeat;
+	background-position: bottom;
+
+}
+h2,h1{
+	color:black;
+	font-style:oblique;
+}
+p{
+color:navy;
+font-size:19px;
+font-style: oblique;
+
+}
+ p.Q1 {
+ 	color:red;
+	font-weight: bold;
+	font-size: 18px
+	color:lightblue;
+
+}
+img.img1{
+	height: 150px;
+    width: 15%;
+}
+img.img2{
+	height: 200px;
+    width: 20%;
+}
+img.img3{
+	height: 250px;
+    width: 25%;
+}
+img.img4{
+	height: 300px;
+    width: 30%;
+}
+img.fly{
+	height: 200px;
+    width: 20%;
+}
+
+img.evaporate{
+	height: 200px;
+    width: 20%;
+}
+img.lightening{
+	height: 200px;
+    width: 20%;
+    }
+img.hatches{
+	height: 200px;
+    width: 20%;
+
+}
+

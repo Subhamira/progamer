@@ -1,0 +1,11 @@
+ 
+   #box-0,#box-1,#box-2,#box-3,#box-4,#box-5,#box-6,#box-7,#box-8,#box-9{
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border: 100px ,color :red;
+    margin: 20;
+}
+#box-4{
+	style:none;
+}

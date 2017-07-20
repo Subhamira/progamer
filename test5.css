@@ -1,0 +1,11 @@
+.post:nth-child(odd) {
+    background: red;
+}
+
+.post:nth-child(even) {
+    background: blue;
+}
+.post:nth-child(5n+0) {
+    background: green;
+}
+
