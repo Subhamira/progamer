@@ -113,4 +113,4 @@
 		});
 
 myPET=new Pet()
-myPET.disable();
+//myPET.disable();
